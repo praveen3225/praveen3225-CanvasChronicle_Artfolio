@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to POST</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <form id="imageForm" action="/" method="POST">
+        <input type="hidden" name="imageData" value="Some data related to the image">
+        <img id="submitImage" src="./Finished copy/20240427_162740.jpg" width="200px" alt="Click to Submit" style="cursor:pointer;">
+    </form>
+    <script>
+        $(document).ready(function(){
+            $('#submitImage').on('click', function(){
+                console.log("image submitted");
+                $('#imageForm').submit();  // Submit the form when the image is clicked
+            });
+        });
+    </script>
+
+</body>
+</html>
