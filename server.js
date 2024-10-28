@@ -6,11 +6,11 @@ const portNumber = 3000;
 const app = express();
 
 const db = new pg.Client({
-    user:"postgres",
-    host:"localhost",
-    database:"canvasChronicleDB", 
-    password:"MSD183*",
-    port:"5433"
+    user:"",
+    host:"",
+    database:"", 
+    password:"",
+    port:""
 });
 
 var data_info = [];
